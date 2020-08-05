@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webapp_core_docker:
+    image: ${DOCKER_REGISTRY-}webappcoredocker
+    build:
+      context: .
+      dockerfile: WebApp_Core_docker/Dockerfile
